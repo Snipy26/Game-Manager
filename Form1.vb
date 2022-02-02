@@ -91,19 +91,64 @@
     End Sub
 
     Private Sub ChangelogToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChangelogToolStripMenuItem.Click
-        Dim fileReader As String = "Hier komme der komplette Text rein aus der Textdatei"
+        Dim fileReader As String = "# Changelog
 
+Basis Version
 
-        ' fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Changelog.txt",
-        ' System.Text.Encoding.UTF32)
+v1.0.0.0
+
+Basis Programm
+
+Grundfunktionen wurden getestet.
+
+Datenbank befindet sich noch in
+der Testphase und Entwicklung.
+
+Updates folgen und weitere
+Infos kommen hier in dem
+Changelog rein.
+
+- Update und Bug Fixed"
         MsgBox(fileReader)
     End Sub
 
     Private Sub HilfeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HilfeToolStripMenuItem.Click
         Dim fileReader As String
-             Dim fileReader As String = "Hier komme der komplette Text rein aus der Textdatei"
-      '  fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Help1.txt",
-      '  System.Text.Encoding.UTF32)
+             Dim fileReader As String = "# Hilfe
+
+In diesen Bereich finden Sie ein Überblick über die einzelnen Felder.
+
+Login
+> Origin -> Startet das Programm *Origin*
+> Steam -> Startet das Programm *Steam*
+> Battle.net -> Startet das Programm *Battle.net*
+> Teamspeak 3 -> Startet das Programm *Teamspeak 3*
+
+Optionen
+> Spiel hinzufügen -> Hier können Sie Ihre Liebingsspiele in der Liste hinzufügen
+> Spiel entfernen -> Hier können Sie Ihr Spiel aus der Liste löschen
+	Das Spiel wird nur aus der Liste der Spiele entfernt. 
+	Deinstallation muss jedoch über das Progamm bzw über Systemsteuerung durchgeführt werden, dies wird automatisch mit geöffnet.
+
+Info
+> Changelog -> Übersicht der Updates und Bugfixed
+> Update -> Update des Programmes
+> Hilfe -> Startet diesen Bereich, den sie grade lesen
+> Über... -> Informationen zum Programm
+
+Liste der Spiel -> In diesen Bereich sind alle Ihre hinzugefügten Spiele drin
+
+Starten -> Ausgewählte Spiel direkt starten
+
+Exit -> Programm beenden
+
+Login Origin -> Startet das Programm *Origin*
+
+Login Steam -> Startet das Programm *Steam*
+
+# Hinweis zu den Login Buttons: Programme sind auf Standard-Installations-Pfad Installiert.
+Desweiteren wäre es ratsam, in den Programmen die Anmelde Daten zu speichern.
+Dadurch ist der automatische Login gewährleistet."
         MsgBox(fileReader)
     End Sub
 
