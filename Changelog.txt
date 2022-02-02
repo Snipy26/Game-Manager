@@ -1,0 +1,18 @@
+﻿# Changelog
+
+Basis Version
+
+v1.0.0.0
+
+Basis Programm
+
+Grundfunktionen wurden getestet.
+
+Datenbank befindet sich noch in
+der Testphase und Entwicklung.
+
+Updates folgen und weitere
+Infos kommen hier in dem
+Changelog rein.
+
+- Update und Bug Fixed
