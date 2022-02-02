@@ -71,7 +71,7 @@
         ask = MsgBox("Wirklich löschen??", MsgBoxStyle.YesNo, " ")
         If ask = MsgBoxResult.Yes Then
             listeSpiele.Items.Remove(listeSpiele.SelectedItem)
-            Process.Start("C:\Windows\System32\appwiz.cpl")
+            Process.Start("C:\Windows\System32\appwiz.cpl") ' ggf. weglassen !!
             MsgBox("Wurde entfernt :(")
         Else
             If ask = MsgBoxResult.No Then
@@ -82,23 +82,28 @@
 
     Private Sub btnloginOrigin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnloginOrigin.Click
         Process.Start("C:\Program Files (x86)\Origin\Origin.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub btnloginSteam_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnloginSteam.Click
         Process.Start("C:\Program Files (x86)\Steam\Steam.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub ChangelogToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ChangelogToolStripMenuItem.Click
-        Dim fileReader As String
-        fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Changelog.txt",
-           System.Text.Encoding.UTF32)
+        Dim fileReader As String = "Hier komme der komplette Text rein aus der Textdatei"
+
+
+        ' fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Changelog.txt",
+        ' System.Text.Encoding.UTF32)
         MsgBox(fileReader)
     End Sub
 
     Private Sub HilfeToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HilfeToolStripMenuItem.Click
         Dim fileReader As String
-        fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Help1.txt",
-           System.Text.Encoding.UTF32)
+             Dim fileReader As String = "Hier komme der komplette Text rein aus der Textdatei"
+      '  fileReader = My.Computer.FileSystem.ReadAllText("C:\Users\sachs\Desktop\VB Basic\Game Manager 1.0\Game Manager\Help1.txt",
+      '  System.Text.Encoding.UTF32)
         MsgBox(fileReader)
     End Sub
 
@@ -116,18 +121,22 @@
 
     Private Sub OriginToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OriginToolStripMenuItem.Click
         Process.Start("C:\Program Files (x86)\Origin\Origin.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub SteamToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SteamToolStripMenuItem.Click
         Process.Start("C:\Program Files (x86)\Steam\Steam.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub BattlenetToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BattlenetToolStripMenuItem.Click
         Process.Start("C:\Program Files (x86)\Battle.net\Battle.net.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub Teamspeak3ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Teamspeak3ToolStripMenuItem.Click
         Process.Start("C:\Program Files\TeamSpeak 3 Client\ts3client_win64.exe")
+        ' aus der Registry kann man die Pfad ermitteln
     End Sub
 
     Private Sub Form1_close(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.FormClosed
